@@ -5,8 +5,8 @@ resume: TIPAのフランス日記では、毎週土曜日配信のドキュメ�
 sections:
 - template: hero-intro
   bg_class: video-bg
-  bg_image: "/img/tipa_bg_home.jpg"
-  bg_video: https://youtu.be/-uyGysbgsNk
+  bg_image: "/img/intro.jpg"
+  bg_video: ''
   title: ''
   show_more: true
 - template: two-columns-text-image
@@ -133,7 +133,7 @@ sections:
   paragraph: 映像を通して、まるでパリに入り込んだかのような体験をしながらフランス語を学びましょう。
   link: "/pricing"
   call_to_action: 無料体験
-date: 2019-02-15 07:56:58 +0000
+date: 2019-02-15T07:56:58+00:00
 keywords:
 - フランス語
 - 映像
