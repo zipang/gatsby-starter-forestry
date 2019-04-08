@@ -1,0 +1,110 @@
+[
+	{
+		"path": "/*",
+		"*": "",
+		"uri": "/",
+		"location": {
+			"href": "http://localhost:8000/",
+			"origin": "http://localhost:8000",
+			"protocol": "http:",
+			"host": "localhost:8000",
+			"hostname": "localhost",
+			"port": "8000",
+			"pathname": "/",
+			"search": "",
+			"hash": "",
+			"state": null,
+			"key": "initial"
+		},
+		"pageResources": {
+			"page": {
+				"componentChunkName": "component---src-templates-page-template-js",
+				"jsonName": "index",
+				"path": "/"
+			}
+		},
+		"pageContext": {
+			"data": {
+				"template": "page",
+				"title": "Home",
+				"resume": "",
+				"sections": [
+					{
+						"template": "hero-intro",
+						"bg_class": "fixed-bg",
+						"bg_image": "/img/tipa_bg_home.jpg"
+					},
+					{
+						"template": "one-column",
+						"bg_class": "white",
+						"paragraph": "## そのままのフランスを伝える学習ドキュメンタリー\n\nTIPAのフランス日記は、土曜日に配信されるドキュメンタリー映像で生のフランス語を学習するエピソード教材です。歌手のカミーユと映像作家のアントワーヌによってパリでドキュメンタリー映像が制作され、配信されます。"
+					},
+					{
+						"template": "three-columns",
+						"title": "学習の流れ",
+						"columns": [
+							{
+								"template": "column-content",
+								"column_content": "土曜日の朝、カミーユとアントワーヌから最新のドキュメンタリーエピソードをパリからお届けします。そして、毎日パリの生活つながっているコミュニティーに入る。"
+							},
+							{
+								"template": "column-content",
+								"column_content": "日仏字幕付きのエピソードを見て、一緒に届く教材でフランス語表現を勉強しましょう。メンバー限定でLINEで質問を送ると、先生が答えてくれます！"
+							},
+							{
+								"template": "column-content",
+								"column_content": "エピソード内容をもとに2ヶ月に一回ヒビキ先生が勉強会を都内で開催します。勉強会が無い月にはライブ動画で授業を配信するので、遠方の方も参加できます！"
+							}
+						]
+					}
+				],
+				"date": "2019-02-15 07:56:58 +0000",
+				"slug": "",
+				"path": "/"
+			},
+			"global": {}
+		},
+		"pathContext": {
+			"data": {
+				"template": "page",
+				"title": "Home",
+				"resume": "",
+				"sections": [
+					{
+						"template": "hero-intro",
+						"bg_class": "fixed-bg",
+						"bg_image": "/img/tipa_bg_home.jpg"
+					},
+					{
+						"template": "one-column",
+						"bg_class": "white",
+						"paragraph": "## そのままのフランスを伝える学習ドキュメンタリー\n\nTIPAのフランス日記は、土曜日に配信されるドキュメンタリー映像で生のフランス語を学習するエピソード教材です。歌手のカミーユと映像作家のアントワーヌによってパリでドキュメンタリー映像が制作され、配信されます。"
+					},
+					{
+						"template": "three-columns",
+						"title": "学習の流れ",
+						"columns": [
+							{
+								"template": "column-content",
+								"column_content": "土曜日の朝、カミーユとアントワーヌから最新のドキュメンタリーエピソードをパリからお届けします。そして、毎日パリの生活つながっているコミュニティーに入る。"
+							},
+							{
+								"template": "column-content",
+								"column_content": "日仏字幕付きのエピソードを見て、一緒に届く教材でフランス語表現を勉強しましょう。メンバー限定でLINEで質問を送ると、先生が答えてくれます！"
+							},
+							{
+								"template": "column-content",
+								"column_content": "エピソード内容をもとに2ヶ月に一回ヒビキ先生が勉強会を都内で開催します。勉強会が無い月にはライブ動画で授業を配信するので、遠方の方も参加できます！"
+							}
+						]
+					}
+				],
+				"date": "2019-02-15 07:56:58 +0000",
+				"slug": "",
+				"path": "/"
+			},
+			"global": {}
+		}
+	},
+	{}
+]

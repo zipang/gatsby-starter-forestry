@@ -1,0 +1,6 @@
+section.video {
+  overflow: hidden;
+}
+section.video .video-container {
+  height: 100%;
+}

@@ -1,0 +1,29 @@
+/**
+ * WARNING: the theme's colors must also be edited inside gatsby-config.js
+ * where there are passed to antd plugin
+ */
+section.three-columns .ant-card {
+  background-color: white;
+  border-radius: 15px;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  section.three-columns .ant-card {
+    margin: 0;
+  }
+}
+section.three-columns .ant-card-bordered {
+  border: 1px solid #c4dbdb;
+}
+section.three-columns .ant-card-hoverable {
+  box-shadow: 3px 2px 2px #41b3eb;
+}
+section.three-columns .ant-card-hoverable .ant-card-head-wrapper {
+  text-align: center;
+}
+section.three-columns .ant-card-hoverable:active,
+section.three-columns .ant-card-hoverable:hover {
+  background: #f4b920;
+  box-shadow: 3px 2px 5px #41b3eb;
+  border: 1px solid white;
+}

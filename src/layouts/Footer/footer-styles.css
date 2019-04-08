@@ -1,0 +1,72 @@
+/**
+ * WARNING: the theme's colors must also be edited inside gatsby-config.js
+ * where there are passed to antd plugin
+ */
+#main-footer {
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #41b3eb;
+  color: black;
+}
+#main-footer .ant-menu-vertical {
+  border: none;
+}
+#main-footer #footer-address {
+  text-align: middle;
+}
+#main-footer #footer-address p {
+  margin: 0 0.5em;
+}
+@media only screen and (min-width: 768px) {
+  #main-footer #footer-address {
+    text-align: left;
+  }
+}
+#main-footer #footer-navigation-right,
+#main-footer #footer-navigation-bottom {
+  height: auto;
+  margin: 0.2em 0;
+}
+#main-footer #footer-navigation-right a,
+#main-footer #footer-navigation-bottom a {
+  color: black;
+  border-bottom: 3px solid transparent;
+  line-height: 1.5em;
+  padding: 0 1em;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  #main-footer #footer-navigation-right a,
+  #main-footer #footer-navigation-bottom a {
+    margin: 0.2em;
+  }
+}
+#main-footer #footer-navigation-right a:focus,
+#main-footer #footer-navigation-bottom a:focus {
+  border: 1px dashed orangered;
+}
+#main-footer #footer-navigation-right a:hover,
+#main-footer #footer-navigation-bottom a:hover,
+#main-footer #footer-navigation-right a:focus,
+#main-footer #footer-navigation-bottom a:focus {
+  text-decoration: none;
+}
+#main-footer #footer-navigation-right a:hover,
+#main-footer #footer-navigation-bottom a:hover {
+  border-bottom: 2px solid orangered;
+}
+@media only screen and (min-width: 768px) {
+  #main-footer #footer-navigation-bottom a {
+    display: inline-block;
+    width: auto;
+  }
+  #main-footer #footer-navigation-right a {
+    text-align: right;
+  }
+}
+#main-footer .content {
+  margin-top: 0.4em;
+}

@@ -1,0 +1,82 @@
+/**
+ * WARNING: the theme's colors must also be edited inside gatsby-config.js
+ * where there are passed to antd plugin
+ */
+section.two-columns-text-image {
+  /**
+	 * Animations when in -view
+	 */
+}
+section.two-columns-text-image.call_to_action .text {
+  font-size: 1.25em;
+}
+section.two-columns-text-image .image {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+section.two-columns-text-image .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+section.two-columns-text-image .call_to_action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 992px) {
+  section.two-columns-text-image .call_to_action {
+    padding: 2em 0 1em;
+  }
+}
+section.two-columns-text-image .call_to_action a {
+  font-size: 1.25em;
+  padding: 0.7em 4em;
+  white-space: nowrap;
+  color: #404040;
+  border: 5px solid #ffffff;
+  box-shadow: 3px 2px 2px lightslategray;
+  border-radius: 40px;
+  outline: none;
+  background: #f4b920;
+  background-size: 400% 400%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+section.two-columns-text-image .call_to_action a:hover,
+section.two-columns-text-image .call_to_action a:focus {
+  text-decoration: none;
+  color: white;
+  border: 5px solid #f46a20;
+  box-shadow: 3px 2px 10px #41b3eb;
+}
+section.two-columns-text-image .call_to_action a:focus {
+  border: 5px solid orangered;
+}
+section.two-columns-text-image.text_last .container {
+  flex-flow: row-reverse wrap;
+}
+section.two-columns-text-image .text,
+section.two-columns-text-image .image {
+  transition: 400ms all ease-in-out;
+}
+section.two-columns-text-image .text {
+  top: 50px;
+  opacity: 0;
+}
+section.two-columns-text-image .image {
+  left: 100px;
+  opacity: 0;
+}
+section.two-columns-text-image.text_last .image {
+  left: -100px;
+}
+section.two-columns-text-image.in-view .text {
+  opacity: 1;
+  top: 0px;
+}
+section.two-columns-text-image.in-view .image {
+  left: 0px;
+  opacity: 1;
+}

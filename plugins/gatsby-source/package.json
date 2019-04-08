@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-source-tipa",
+  "version": "0.1.0",
+  "description": "Read content files, parse front-matter and make them available as collections of ready to use data",
+  "main": "index.js",
+  "author": "zipang (Christophe Desguez)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "vfile": "^4.0.0",
+    "walker": "^1.0.7"
+  }
+}

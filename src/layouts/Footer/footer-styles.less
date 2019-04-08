@@ -1,0 +1,62 @@
+@import "../layout-vars.less";
+
+#main-footer {
+
+	font-size: 0.8em;
+	text-align: center;
+	background-color: @highlight-color;
+	color: black; // change due to poor contrast with background color
+
+	.ant-menu-vertical {
+		border: none;
+	}
+	#footer-address {
+		text-align: middle;
+		p {
+			margin: 0 0.5em;
+		}
+		@media only screen and (min-width : @sm) {
+			text-align: left;
+		}
+	}
+	#footer-navigation-right, #footer-navigation-bottom {
+		height: auto;
+		margin: 0.2em 0;
+		a {
+			color: black;
+			border-bottom: 3px solid transparent;
+			line-height: 1.5em;
+			padding: 0 1em;
+			@media only screen and (min-width : @sm) {
+				margin: 0.2em;
+			}
+			white-space: nowrap;
+			width: 100%;
+			text-align: center;
+			display: block;
+			&:focus {
+				border: 1px dashed orangered;
+			}
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+			&:hover {
+				border-bottom: 2px solid orangered;
+			}
+		}
+	}
+
+	@media only screen and (min-width : @sm) {
+		#footer-navigation-bottom a {
+			display: inline-block;
+			width: auto;
+		}
+		#footer-navigation-right a {
+			text-align: right;
+		}
+	}
+
+	.content {
+		margin-top: 0.4em;
+	}
+}

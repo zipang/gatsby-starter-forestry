@@ -1,0 +1,30 @@
+{
+	"version": 2,
+	"alias": ["tipafrance.now.sh"],
+	"builds": [
+		{
+			"src": "package.json",
+			"use": "@now/static-build",
+			"config": {
+				"distDir": "public"
+			}
+		}
+	],
+	"env": {
+		"NODE_ENV": "production"
+	},
+	"routes": [
+		{
+			"src": "^/public/static/(.*)",
+			"headers": { "cache-control": "public,max-age=31536000,immutable" }
+		},
+		{
+			"src": "^/(.*).(css|js)",
+			"headers": { "cache-control": "public,max-age=31536000,immutable" }
+		},
+		{
+			"src": "^/(.*).html",
+			"headers": { "cache-control": "public,max-age=0,must-revalidate" }
+		}
+	]
+}

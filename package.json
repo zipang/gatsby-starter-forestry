@@ -1,0 +1,37 @@
+{
+  "name": "tipafrance-reboot",
+  "version": "0.0.1",
+  "description": "Gatsby+React reboot of the TIPA main site",
+  "main": "n/a",
+  "author": "zipang <christophe.desguez@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "gatsby": "^2.2.5",
+    "gatsby-plugin-antd": "^2.0.2",
+    "gatsby-plugin-less": "^2.0.12",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-sitemap": "^2.0.10",
+    "gray-matter": "^4.0.2",
+    "less": "^3.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "react-markdown": "^4.0.6",
+    "react-player": "^1.9.3",
+    "react-responsive": "^6.1.1",
+    "walker": "^1.0.7"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "now-build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  }
+}
