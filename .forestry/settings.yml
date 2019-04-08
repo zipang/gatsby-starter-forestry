@@ -12,7 +12,6 @@ sections:
 - type: document
   path: content/metadata/seo.md
   label: Site Metadata
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
