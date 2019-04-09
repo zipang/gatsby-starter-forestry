@@ -22,6 +22,7 @@ yarn-error.log*
 
 # Project files
 *.afdesign
+proto/
 
 # Yarn Integrity file
 .yarn-integrity
