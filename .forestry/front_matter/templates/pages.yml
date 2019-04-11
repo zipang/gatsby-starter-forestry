@@ -32,10 +32,4 @@ fields:
   - three-columns
   - one-column
 pages:
-- content/staff.md
-- content/educational.md
-- content/community.md
-- content/questions-answers.md
-- content/culture.md
-- content/pricing.md
 - content/home.md
