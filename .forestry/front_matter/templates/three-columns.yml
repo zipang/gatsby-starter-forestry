@@ -16,7 +16,6 @@ fields:
   template_types:
   - column-content
 - type: include
-- type: include
   name: background
   label: Background
   template: background
