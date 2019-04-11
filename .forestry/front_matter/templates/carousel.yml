@@ -1,4 +1,15 @@
 ---
 label: Carousel
 hide_body: true
-fields: []
+fields:
+- type: text
+  name: title
+  label: Title
+- type: field_group_list
+  name: slides
+  label: Slides
+  fields:
+  - type: include
+    template: slide
+    label: Slide
+    name: slide
