@@ -15,6 +15,3 @@ fields:
       format: markdown
   description: 'Text that appears on the image background. Note : Use a h3 for the
     slide title if needed'
-- type: text
-  name: call_
-  label: 'Call '
