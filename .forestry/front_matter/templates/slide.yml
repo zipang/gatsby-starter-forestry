@@ -1,4 +1,20 @@
 ---
 label: Slide
 hide_body: true
-fields: []
+fields:
+- type: file
+  name: image
+  label: Image
+  description: A slide can be just an image
+- type: textarea
+  name: text
+  label: Text
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: 'Text that appears on the image background. Note : Use a h3 for the
+    slide title if needed'
+- type: text
+  name: call_
+  label: 'Call '
