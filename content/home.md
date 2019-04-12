@@ -3,22 +3,21 @@ template: page
 title: Home
 resume: Voici une landing page qui va parler de vélos
 sections:
-- template: hero-intro
-  bg_class: video-bg
-  bg_image: "/img/intro.jpg"
-  bg_video: 
-  title: ''
-  show_more: true
-- template: two-columns-text-image
-  text_position: text_first
-  bg_class: grey
-  paragraph: |-
-    Nous fabriquons des vélos.
+- template: carousel
+  slides:
+  - image: "/img/andhika-soreng-390599-unsplash.jpg"
+    text: |-
+      ### You want to go fast ?
 
-    Pour les petits et pour les grands.
-  title: Des vélos qui roulent pour vous
-  image: "/img/something.png"
-  media_title: Nos vélos ont des roues
+      Our bikes are made for the most extreme adventurous minds.
+
+      They are fast, strong, but incredibly light.
+  - image: "/img/john-gough-525717-unsplash.jpg"
+    text: |-
+      ### Tired of the city ?
+
+      We make the most trusted bikes to get you out.
+  title: Intro
 date: 2019-04-08 07:07:07 +0000
 keywords:
 - landing-page
