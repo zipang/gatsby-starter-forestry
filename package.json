@@ -10,20 +10,22 @@
     "node": ">=10"
   },
   "dependencies": {
-    "gatsby": "^2.2.5",
+    "gatsby": "^2.3.21",
     "gatsby-plugin-antd": "^2.0.2",
     "gatsby-plugin-less": "^2.0.12",
-    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-sitemap": "^2.0.10",
+    "gatsby-plugin-sitemap": "^2.0.12",
     "gray-matter": "^4.0.2",
     "less": "^3.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-id-swiper": "^2.1.1",
     "react-markdown": "^4.0.6",
-    "react-player": "^1.9.3",
+    "react-player": "^1.11.0",
     "react-responsive": "^6.1.1",
+    "swiper": "^4.5.0",
     "walker": "^1.0.7"
   },
   "scripts": {
