@@ -43,7 +43,7 @@ module.exports = {
 				display: "standalone",
 				theme_color: "#40a4d5",
 				display: "minimal-ui",
-				icon: "static/img/logo-blanc.png",
+				icon: "static/ico/favicon.png",
 			},
 		},
 		"gatsby-plugin-offline",
