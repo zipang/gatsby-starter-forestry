@@ -15,12 +15,15 @@ fields:
       format: markdown
   description: 'Text that appears on the image background. Note : Use a h3 for the
     slide title if needed'
-- type: field_group
+- type: field_group_list
   name: call_to_action
-  label: Call to Action
-  description: An optional call to action (link)
+  label: Call to action
+  config:
+    min: '0'
+    max: '1'
+  description: Add an optional call to action button
   fields:
   - type: include
     name: call_to_action
-    label: Call to action
+    label: Call to Action
     template: call-to-action-link
