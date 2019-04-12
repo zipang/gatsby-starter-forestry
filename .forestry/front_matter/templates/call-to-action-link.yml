@@ -8,13 +8,13 @@ fields:
   label: Link Text
   description: What appears on the button
   config:
-    required: true
+    required: false
 - type: text
   name: link_url
   label: Link URL
   description: Absolute or relative path to the linked ressource
   config:
-    required: true
+    required: false
 - type: tag_list
   name: link_modifiers
   label: Link modifiers
