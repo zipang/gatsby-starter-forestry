@@ -1,7 +1,7 @@
 ---
 label: Slide
 hide_body: true
-display_field: image
+display_field: text
 fields:
 - type: file
   name: image
