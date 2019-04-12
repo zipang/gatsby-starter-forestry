@@ -1,10 +1,12 @@
 ---
 label: Carousel
 hide_body: true
+display_field: title
 fields:
 - type: text
   name: title
   label: Title
+  default: Intro carousel
 - type: field_group_list
   name: slides
   label: Slides
