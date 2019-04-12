@@ -1,7 +1,6 @@
 ---
 label: Two columns (text+image)
 hide_body: false
-display_field: title
 fields:
 - type: text
   name: title
@@ -35,15 +34,11 @@ fields:
   label: Media Title
   description: For SEO purposes it is extremely recommended to indicate a title or
     alt attribute for any images
-- type: text
-  name: link
-  label: Link
-  description: Video link or call to action link
-- type: text
-  name: call_to_action
-  label: Call to Action
-  description: A big action button with an invitation
 - type: include
   name: background
   label: Background
   template: background
+- type: include
+  name: call_to_action
+  label: Call to action
+  template: call-to-action-link
