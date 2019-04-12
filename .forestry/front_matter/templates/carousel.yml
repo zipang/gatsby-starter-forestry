@@ -6,7 +6,7 @@ fields:
 - type: text
   name: title
   label: Title
-  default: Intro carousel
+  default: ''
 - type: field_group_list
   name: slides
   label: Slides
