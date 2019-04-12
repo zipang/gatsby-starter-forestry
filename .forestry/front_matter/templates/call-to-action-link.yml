@@ -1,4 +1,21 @@
 ---
 label: Call to action (link)
 hide_body: true
-fields: []
+display_field: link_text
+fields:
+- type: text
+  name: link_text
+  label: Link Text
+  description: What appears on the button
+  config:
+    required: true
+- type: text
+  name: link_url
+  label: Link URL
+  description: Absolute or relative path to the linked ressource
+  config:
+    required: true
+- type: tag_list
+  name: link_modifiers
+  label: Link modifiers
+  description: Add some tags for icons and colors
