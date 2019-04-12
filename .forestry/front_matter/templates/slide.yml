@@ -1,7 +1,6 @@
 ---
 label: Slide
 hide_body: true
-display_field: image
 fields:
 - type: file
   name: image
@@ -16,8 +15,12 @@ fields:
       format: markdown
   description: 'Text that appears on the image background. Note : Use a h3 for the
     slide title if needed'
-- type: include
+- type: field_group
   name: call_to_action
-  label: Call to action
-  template: call-to-action-link
-  description: Add an optional call to action to any slide
+  label: Call to Action
+  description: An optional call to action (link)
+  fields:
+  - type: include
+    name: call_to_action
+    label: Call to action
+    template: call-to-action-link
