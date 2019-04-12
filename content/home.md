@@ -1,7 +1,7 @@
 ---
 template: page
-title: Home
-resume: Voici une landing page qui va parler de vélos
+title: Landing Page
+resume: We build bikes to break the limits
 sections:
 - template: carousel
   slides:
