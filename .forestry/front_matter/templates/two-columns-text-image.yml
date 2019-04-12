@@ -42,7 +42,7 @@ fields:
   name: call_to_action
   label: Call to action
   fields:
-    - type: include
-      name: call_to_action
-      label: Call to action
-      template: call-to-action-link
+  - type: include
+    name: call_to_action
+    label: Call to action
+    template: call-to-action-link

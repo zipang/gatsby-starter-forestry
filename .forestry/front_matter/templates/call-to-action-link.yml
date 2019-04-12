@@ -1,7 +1,7 @@
 ---
 label: Call to action (link)
 hide_body: true
-display_field: link_text
+display_field: link_url
 fields:
 - type: text
   name: link_text
