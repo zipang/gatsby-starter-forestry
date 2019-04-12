@@ -17,9 +17,9 @@ sections:
     text: |-
       ### You want to go fast ?
 
-      Our bikes are made for the most extreme adventurous minds.
+      Our bikes are made for the most extreme speed racers.
 
-      They are fast, strong, but incredibly light.
+      They are fast, strong, but still incredibly light due to the carbon fiber used for their cadre.
   - image: "/img/john-gough-525717-unsplash.jpg"
     text: |-
       ### Tired of the city ?
@@ -29,6 +29,6 @@ sections:
     text: |-
       ### To boldly go where no bike has gone before
 
-      > Sand, snow, dirt, our bikes are afraid of nothing.
+      > Sand, snow, dirt, ice : you named it ! Our bikes ain't afraid of nothing.
 
 ---

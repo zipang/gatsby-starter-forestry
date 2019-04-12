@@ -3,12 +3,18 @@ import Swiper from 'react-id-swiper';
 import ReactMarkdown from "react-markdown";
 import "./carousel-styles.less";
 
-const Carousel = ({ title, slides }) => (
-	<section section_name="carousel">{
-		slides.map((slide) => 
-			<ReactMarkdown>{text}</ReactMarkdown>
-		)
-	}
+const slideId = (sectionId, i) => `${sectionId}-slide-${(100+i).toString().substr(1)}`;
+
+const Carousel = ({ id, title, slides }) => (
+	<section id={id} section_name="carousel">
+		<Swiper>{
+			slides.map(({image, text}, i) => 
+				<div className="slide" key={slideId(id, i)}>
+					<img className="" data-src={image} alt={text} />
+					<ReactMarkdown>{text}</ReactMarkdown>
+				</div>
+			)
+		}</Swiper>
 	</section>
 );
 
