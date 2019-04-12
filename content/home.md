@@ -5,6 +5,11 @@ resume: Voici une landing page qui va parler de vélos
 sections:
 - template: carousel
   slides:
+  - image: "/img/paxson-woelber-621854-unsplash.jpg"
+    text: |-
+      ### To boldly go where no bike has gone before
+
+      > Sand, snow, dirt, our bikes are afraid of nothing.
   - image: "/img/andhika-soreng-390599-unsplash.jpg"
     text: |-
       ### You want to go fast ?
