@@ -38,7 +38,11 @@ fields:
   name: background
   label: Background
   template: background
-- type: include
+- type: field_group
   name: call_to_action
   label: Call to action
-  template: call-to-action-link
+  fields:
+    - type: include
+      name: call_to_action
+      label: Call to action
+      template: call-to-action-link

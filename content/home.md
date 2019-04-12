@@ -40,9 +40,10 @@ sections:
     We provide the best quality products of bicycle and no one can be compared by our service because we are the best and we will be. We deliver all the products with brand new quality and services. Any product is available in multiple colours so that they allways look great. We take very less delivery charge in comparison with other companies.
   image: "/img/clayton-cardinalli-1254512-unsplash.jpg"
   media_title: Man holding a bike
-  link_text: More info
-  link_url: "/who-we-are"
-  link_modifiers:
-  - primary
+  call_to_action:
+    link_text: More info
+    link_url: "/who-we-are"
+    link_modifiers:
+      - primary
 
 ---
