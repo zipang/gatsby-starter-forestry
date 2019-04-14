@@ -10,8 +10,11 @@ const Carousel = ({ id, title, slides }) => (
 		<Swiper>{
 			slides.map(({image, text}, i) => 
 				<div className="slide" key={slideId(id, i)}>
-					<img className="" data-src={image} alt={text} />
-					<ReactMarkdown>{text}</ReactMarkdown>
+					<img className="swiper-lazy" data-src={image} alt={text} />
+					{ text && <div className="text">
+						<ReactMarkdown>{text}</ReactMarkdown>
+					</div>
+					}
 				</div>
 			)
 		}</Swiper>
