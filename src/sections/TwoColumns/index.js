@@ -9,29 +9,29 @@ import "./two-columns-styles.less";
 
 const isVideo = (link) => /^https:\/\/[youtu.be|vimeo.com]/.test(link);
 
-const MediaColumn = ({ image, media_title, call_to_action, link }) => {
-	if (isVideo(link)) {
+const MediaColumn = ({ image, media_title, call_to_action, call_to_action: { link_text, link_url, link_modifiers }, media_link }) => {
+	if (isVideo(media_link)) {
 		return (
 			<Col className="video" span={24} lg={10}>
 				<EmbeddedVideoPlayer
 					title={media_title}
-					video_url={link}
+					video_url={media_link}
 					light={true}
 				/>
 			</Col>
 		);
 	} else if (call_to_action) {
 		return (
-			<Col className="call_to_action" span={24} lg={10}>
-				<Link className="button" to={link}>
-					{call_to_action}
+			<Col className={`call_to_action ${link_modifiers.join(' ')}`} span={24} lg={10}>
+				<Link className="button" to={link_url}>
+					{link_text}
 				</Link>
 			</Col>
 		);
-	} else if (link) {
+	} else if (media_link) {
 		return (
 			<Col className="image" span={24} lg={10}>
-				<a href={link} target="_blank" rel="noopener noreferrer">
+				<a href={media_link} target="_blank" rel="noopener noreferrer">
 					<img src={image} title={media_title} alt={media_title} />
 				</a>
 			</Col>
@@ -56,7 +56,7 @@ const TwoColumns = ({
 	image,
 	media_title,
 	call_to_action,
-	link,
+	image_link,
 	bg_class,
 	...section_background
 }) => (
@@ -83,7 +83,7 @@ const TwoColumns = ({
 				image={image}
 				media_title={media_title}
 				call_to_action={call_to_action}
-				link={link}
+				image_link={image_link}
 			/>
 		</Row>
 	</SectionWithBackground>
