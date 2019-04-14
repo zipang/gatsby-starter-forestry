@@ -5,7 +5,7 @@ fields:
 - type: text
   name: title
   label: Title
-  description: 'A big <h2> title '
+  description: 'A big <h2> title'
 - type: textarea
   name: paragraph
   label: Paragraph
@@ -29,6 +29,10 @@ fields:
   name: image
   label: Image
   description: An image in its own column or the vignette to launch a video
+- type: text
+  name: media_link
+  label: Media Link
+  description: Video URL or a link added to the image
 - type: text
   name: media_title
   label: Media Title
