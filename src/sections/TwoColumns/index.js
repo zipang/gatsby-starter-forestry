@@ -1,15 +1,15 @@
 import React from "react";
 import SectionWithBackground from "../SectionWithBackground";
 import EmbeddedVideoPlayer from "../../components/EmbeddedVideoPlayer";
+import CallToActionButton from "../../components/CallToActionButton";
 import ReactMarkdown from "react-markdown";
-import { Link } from "gatsby";
 import { Row, Col } from "antd";
 
 import "./two-columns-styles.less";
 
 const isVideo = (link) => /^https:\/\/[youtu.be|vimeo.com]/.test(link);
 
-const MediaColumn = ({ image, media_title, call_to_action, call_to_action: { link_text, link_url, link_modifiers }, media_link }) => {
+const MediaColumn = ({ image, media_title, media_link }) => {
 	if (isVideo(media_link)) {
 		return (
 			<Col className="video" span={24} lg={10}>
@@ -18,14 +18,6 @@ const MediaColumn = ({ image, media_title, call_to_action, call_to_action: { lin
 					video_url={media_link}
 					light={true}
 				/>
-			</Col>
-		);
-	} else if (call_to_action) {
-		return (
-			<Col className={`call_to_action ${link_modifiers.join(' ')}`} span={24} lg={10}>
-				<Link className="button" to={link_url}>
-					{link_text}
-				</Link>
 			</Col>
 		);
 	} else if (media_link) {
@@ -77,12 +69,12 @@ const TwoColumns = ({
 			<Col className="text" span={24} lg={14}>
 				{title && <h2>{title}</h2>}
 				<ReactMarkdown>{paragraph}</ReactMarkdown>
+				{call_to_action && <CallToActionButton {...call_to_action}/>}
 			</Col>
 
 			<MediaColumn
 				image={image}
 				media_title={media_title}
-				call_to_action={call_to_action}
 				image_link={image_link}
 			/>
 		</Row>
