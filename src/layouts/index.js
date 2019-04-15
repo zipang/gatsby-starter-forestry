@@ -31,6 +31,7 @@ const HSFLayout = ({ global, page, children }) => {
 			<Header
 				fixed={pageScroll.fixHeader}
 				path={page.path}
+				menu={global.header_navigation}
 				{...global}
 			/>
 			<main className="ant-layout-content" role="main">
