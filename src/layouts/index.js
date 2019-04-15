@@ -22,7 +22,7 @@ const HSFLayout = ({ global, page, children }) => {
 
 	return (
 		<div className="ant-layout">
-			<SEO metadata={global.site_metadata} pageInfo={page} />
+			<SEO metadata={global.seo} pageInfo={page} />
 			<UpdatePagePosition
 				pageScroll={pageScroll}
 				updateScroll={updateScroll}
