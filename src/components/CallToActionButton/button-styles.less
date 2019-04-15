@@ -1,0 +1,25 @@
+@import "../../layouts/layout-vars";
+
+a.call-to-action.button {
+
+	display: inline-block;
+	border-radius: 50px;
+	text-decoration: none;
+	box-shadow: 2px 0px 15px 0px lightgray;
+	margin-top: 2em;
+	padding: 0.7em 2em;
+	white-space: nowrap;
+
+	&.primary {
+		background-color: @primary-color;
+		color: white;
+		font-size: 1em;
+	}
+
+	&:hover, &:focus {
+		box-shadow: 2px 0px 17px 0px darkgray;
+		//text-decoration: underline;
+		animation: all 400ms ease infinite;
+	}
+
+}
