@@ -4,7 +4,7 @@ import { HamburgerMenu } from "../../components/HamburgerMenu";
 
 import "./header-styles.less";
 
-import logo from "./tipafrance-logo.png";
+import logo from "./logo.png";
 
 const extractPageName = (p) => p.split("/").pop();
 const buildNavigation = (navLinks, selected) => {
@@ -19,10 +19,6 @@ const buildNavigation = (navLinks, selected) => {
 				{nav.text}
 			</Link>
 		)),
-		<a id="btn-free-trial" className="button" tabIndex="0" role="menuitem"
-			href="/pricing" title="pricing">無料体験</a>,
-		<a id="btn-login" className="button" tabIndex="0" role="menuitem"
-			href="/login" title="login">ログイン</a>,
 	];
 };
 
@@ -32,7 +28,7 @@ const buildNavigation = (navLinks, selected) => {
  * @param {String} path - the current page path (to select in the navigation menu)
  * @param {Boolean} fixed - to fix the position of the header when scrolling down
  */
-const Header = ({ navigation, path, fixed }) => (
+const Header = ({ navigation = [], path, fixed }) => (
 
 	<header id="main-header" className={fixed ? "fixed" : ""} tabIndex="0">
 
