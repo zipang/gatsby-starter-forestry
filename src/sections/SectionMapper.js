@@ -6,9 +6,11 @@ import Hero from "./Hero";
 import OneColumn from "./OneColumn";
 import TwoColumns from "./TwoColumns";
 import ThreeColumns from "./ThreeColumns";
+import Carousel from "./Carousel";
 
 const SECTIONS_MAPPING = {
 	"hero-intro": Hero,
+	"carousel": Carousel,
 	"one-column": OneColumn,
 	"two-columns-text-image": TwoColumns,
 	"three-columns": ThreeColumns,

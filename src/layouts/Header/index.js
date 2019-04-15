@@ -7,12 +7,13 @@ import "./header-styles.less";
 import logo from "./logo.png";
 
 const extractPageName = (p) => p.split("/").pop();
-const buildNavigation = (navLinks, selected) => {
+const buildNavigation = ({ entries = [] }, selected) => {
 	return [
-		...navLinks.map((nav) => (
+		...entries.map((nav) => (
 			<Link
 				to={nav.link}
-				role="menuitem" tabIndex="0"
+				role="menuitem"
+				tabIndex="0"
 				title={extractPageName(nav.link)}
 				className={nav.link === selected ? "selected" : undefined}
 			>
@@ -24,31 +25,30 @@ const buildNavigation = (navLinks, selected) => {
 
 /**
  *
- * @param {Object} navigation - contains an array of {link, text} entries
- * @param {String} path - the current page path (to select in the navigation menu)
+ * @param {Object} header_navigation - contains an array of {link, text} entries
+ * @param {Object} site_metadata - contains an array of {link, text} entries
+ * @param {String} path   - the current page path (to select in the navigation menu)
  * @param {Boolean} fixed - to fix the position of the header when scrolling down
  */
-const Header = ({ navigation = [], path, fixed }) => (
-
+const Header = ({
+	header_navigation,
+	site_metadata: { site_title },
+	path,
+	fixed,
+}) => (
 	<header id="main-header" className={fixed ? "fixed" : ""} tabIndex="0">
-
 		<div className="logo">
 			<Link to="/" tabIndex="0">
-				<img src={logo} alt="TIPA France (logo)" title="TIPA France" />
+				<img src={logo} alt="(logo)" title={site_title} />
 			</Link>
 		</div>
 
-		<HamburgerMenu
-			id="main-navigation"
-			navigationLinks={buildNavigation(navigation.entries, path)}
-		>
-			<div id="navigation-mobile">
-				<a id="btn-free-trial-mobile" className="button" tabIndex="0"
-					href="/pricing" title="pricing">無料体験</a>
-				<a id="btn-login-mobile" className="button" tabIndex="0"
-					href="/login" title="login">ログイン</a>
-			</div>
-		</HamburgerMenu>
+		{header_navigation && (
+			<HamburgerMenu
+				id="main-navigation"
+				navigationLinks={buildNavigation(header_navigation.entries, path)}
+			/>
+		)}
 	</header>
 );
 

@@ -6,8 +6,8 @@ import { Row, Col } from "antd";
 import "./footer-styles.less";
 
 const pageFooter = ({
-	footer_navigation_right,
-	footer_navigation_bottom,
+	footer_navigation_right  = { entries: [] },
+	footer_navigation_bottom = { entries: [] },
 	site_metadata,
 }) => (
 	<footer id="main-footer" className="ant-layout-footer" tabIndex="O">
@@ -22,7 +22,7 @@ const pageFooter = ({
 					))}
 				</nav>
 				<div className="content">
-					© {new Date().getFullYear()} TIPAのフランス日記 Tous droits
+					© {new Date().getFullYear()} {site_metadata.site_name} Tous droits
 					réservés.
 				</div>
 			</Col>

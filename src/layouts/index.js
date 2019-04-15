@@ -22,16 +22,16 @@ const HSFLayout = ({ global, page, children }) => {
 
 	return (
 		<div className="ant-layout">
-			<SEO metadata={global.seo} pageInfo={page} />
+			<SEO metadata={global.site_metadata} pageInfo={page} />
 			<UpdatePagePosition
 				pageScroll={pageScroll}
 				updateScroll={updateScroll}
 				fixHeader={(scrollTop) => scrollTop > 50}
 			/>
 			<Header
-				navigation={global.header_navigation}
 				fixed={pageScroll.fixHeader}
 				path={page.path}
+				{...global}
 			/>
 			<main className="ant-layout-content" role="main">
 				{children}
