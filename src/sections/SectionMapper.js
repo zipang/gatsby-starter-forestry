@@ -7,6 +7,7 @@ import OneColumn from "./OneColumn";
 import TwoColumns from "./TwoColumns";
 import ThreeColumns from "./ThreeColumns";
 import Carousel from "./Carousel";
+import GridBoard from "./GridBoard";
 
 const SECTIONS_MAPPING = {
 	"hero-intro": Hero,
@@ -14,6 +15,7 @@ const SECTIONS_MAPPING = {
 	"one-column": OneColumn,
 	"two-columns-text-image": TwoColumns,
 	"three-columns": ThreeColumns,
+	"grid-board": GridBoard
 };
 const UNKNOWN_SECTION = (section) => (
 	<section>
