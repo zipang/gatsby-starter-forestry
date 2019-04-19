@@ -1,4 +1,44 @@
 ---
 label: Cell
 hide_body: true
-fields: []
+fields:
+- name: col
+  type: number
+  label: Column
+  description: Columns are numbered from 1 to n (the number of columns in the grid)
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: row
+  type: number
+  label: Row
+  description: The number of he row - from 1 to n (numbre of rows in the grid)
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: col_span
+  type: number
+  label: Column stretch
+  description: The number of columns over which this cell spans
+  default: '1'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: row_span
+  type: number
+  label: Row stretch
+  description: The number of rows this cell stretches
+  default: '1'
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
