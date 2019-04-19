@@ -1,11 +1,8 @@
 ---
 label: Slide
 hide_body: true
+display_field: text
 fields:
-- type: file
-  name: image
-  label: Image
-  description: A slide can be just an image
 - type: textarea
   name: text
   label: Text
@@ -15,6 +12,10 @@ fields:
       format: markdown
   description: 'Text that appears on the image background. Note : Use a h3 for the
     slide title if needed'
+- type: file
+  name: image
+  label: Image
+  description: A slide can be just an image
 - type: field_group_list
   name: call_to_action
   label: Call to action
@@ -27,3 +28,9 @@ fields:
     name: call_to_action
     label: Call to Action
     template: call-to-action-link
+- name: cell
+  type: include
+  config: {}
+  template: cell
+  label: Cell
+  description: When used inside a grid board
