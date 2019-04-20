@@ -9,9 +9,9 @@ fields:
   default: 0
   required: true
   config:
-    min:
-    max:
-    step:
+    min: 
+    max: 
+    step: 
 - name: row
   type: number
   label: Row
@@ -19,9 +19,9 @@ fields:
   default: 0
   required: true
   config:
-    min:
-    max:
-    step:
+    min: 
+    max: 
+    step: 
 - name: col_span
   type: number
   label: Column stretch
@@ -30,7 +30,7 @@ fields:
   required: true
   config:
     min: 0
-    max:
+    max: 
     step: 1
 - name: row_span
   type: number
@@ -40,5 +40,5 @@ fields:
   required: true
   config:
     min: 0
-    max:
+    max: 
     step: 1

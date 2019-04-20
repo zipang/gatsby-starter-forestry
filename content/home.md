@@ -59,6 +59,8 @@ sections:
   - col: '1'
     row: '1'
     col_span: '2'
-    row_span: '1'
+    row_span: '2'
+    text: "### Gears"
+    image: "/img/modele-summit-evo-01.jpg"
 
 ---
