@@ -56,6 +56,12 @@ sections:
   rows: '2'
   container_class_name: container
   cells:
+  - text: "### Rags"
+    image: "/img/clayton-cardinalli-1254512-unsplash.jpg"
+    col: '3'
+    row: '1'
+    col_span: '1'
+    row_span: '2'
   - col: '1'
     row: '1'
     col_span: '2'
