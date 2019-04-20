@@ -32,6 +32,6 @@ fields:
   - two-columns-text-image
   - three-columns
   - one-column
-Example
+  - gridzly
 pages:
 - content/home.md

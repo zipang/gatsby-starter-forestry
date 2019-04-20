@@ -44,6 +44,16 @@ sections:
     link_text: More info
     link_url: "/who-we-are"
     link_modifiers:
-      - primary
+    - primary
+- template: two-columns-text-image
+  text_position: text_last
+  bg_class: white
+  title: Ah and Oh !
+  paragraph: We're not done yet
+  image: "/img/obstacle.jpg"
+- template: gridzly
+  cols: '5'
+  rows: '2'
+  container_class_name: container
 
 ---
