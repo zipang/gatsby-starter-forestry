@@ -9,9 +9,9 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
 - name: row
   type: number
   label: Row
@@ -19,26 +19,26 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
 - name: col_span
   type: number
   label: Column stretch
   description: The number of columns over which this cell spans
-  default: '1'
+  default: 1
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min: 0
+    max:
+    step: 1
 - name: row_span
   type: number
   label: Row stretch
   description: The number of rows this cell stretches
-  default: '1'
+  default: 1
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min: 0
+    max:
+    step: 1

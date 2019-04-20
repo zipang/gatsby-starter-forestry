@@ -38,7 +38,7 @@ fields:
   description: Add cells on the grid
   fields:
   - type: include
-    template: cell
+    template: slide
     label: Cell
     name: cell
 
