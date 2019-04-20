@@ -55,5 +55,10 @@ sections:
   cols: '5'
   rows: '2'
   container_class_name: container
+  cells:
+  - col: '1'
+    row: '1'
+    col_span: '2'
+    row_span: '1'
 
 ---
