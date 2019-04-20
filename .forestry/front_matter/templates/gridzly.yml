@@ -10,7 +10,7 @@ fields:
   required: true
   config:
     min: '1'
-    max: 
+    max:
     step: '1'
 - name: rows
   type: number
@@ -20,7 +20,7 @@ fields:
   required: true
   config:
     min: '1'
-    max: 
+    max:
     step: '1'
 - name: has_container
   type: boolean
@@ -32,3 +32,13 @@ fields:
     required: false
   label: Container class name
   default: container
+- name: cells
+  type: field_group_list
+  label: Cells
+  description: Add cells on the grid
+  fields:
+  - type: include
+    template: cell
+    label: Cell
+    name: cell
+

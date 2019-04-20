@@ -32,5 +32,6 @@ fields:
   - two-columns-text-image
   - three-columns
   - one-column
+Example
 pages:
 - content/home.md
