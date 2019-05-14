@@ -21,15 +21,11 @@ const withGridDimensions = (cw, rh) => (Wrapped, i) => (...props) =>
  *
  * @param {Number} cols - number of columns
  * @param {Number} rows - number of rows
- * @param {Boolean} [hasContainer=false] - add a container around the children
- * @param {String}  [containerClassName="container"] - container class name
  * @param {GridBoard.Cells[]} children
  */
 const GridBoard = ({
 	cols = 5,
 	rows = 2,
-	hasContainer = false,
-	containerClassName = "container",
 	children,
 	cells = [],
 	...props
@@ -46,9 +42,7 @@ const GridBoard = ({
 	const gbSection = h(
 		"section",
 		{ className: "grid-board", ...props },
-		hasContainer ?
-			h("div", {className:containerClassName}, gridCells) :
-			gridCells
+		gridCells
 	);
 
 	return gbSection;
