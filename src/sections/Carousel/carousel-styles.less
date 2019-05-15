@@ -1,8 +1,11 @@
 
 section.carousel {
 	background-color: black;
-	min-height: 80vh;
+	height: 80vh;
 	position: relative;
+	.swiper-container {
+		height: 100%;
+	}
 	.text {
 		padding: 20% 4em;
 		h3 {
@@ -17,5 +20,12 @@ section.carousel {
 		position: absolute;
 		top: 0; left: 0;
 		color: white;
+	}
+	.slide {
+		display: block;
+		width: 100vw;
+		height: 100%;
+		background-size: cover;
+		overflow: hidden;
 	}
 }
