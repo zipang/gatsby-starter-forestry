@@ -6,4 +6,26 @@ section.grid-board {
 		overflow: hidden;
 		position: relative;
 	}
+	.cell {
+		overflow: hidden;
+		img.cell-image {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			min-height: 30%;
+			min-width: 30%;
+			max-width: 80%;
+			max-height: 80%;
+			transform: translate(-50%, -50%);
+		}
+		.cell-text {
+			position: absolute;
+			padding: 0.5em 2em;
+			&.bottom {
+				display: block;
+				bottom: 0;
+				width: 100%;
+			}
+		}
+	}
 }

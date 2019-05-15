@@ -10,8 +10,8 @@ const h = React.createElement;
  * @param {Number} cw - column width in percents of the grid width (0-100)
  * @param {Number} rh - row height in percents of the grid height (0-100)
  */
-const withGridDimensions = (cw, rh) => (Wrapped, i) => (...props) =>
-	<Wrapped colWidth={cw} rowHeight={rh} key={createKey("cell-",i)} {...props} />;
+const withGridDimensions = (cw, rh, i) => ({...props}) =>
+	<GridBoard.Cell colWidth={cw} rowHeight={rh} key={createKey("cell-",i)} {...props} />;
 
 /**
  * Define a grid of `cols` x `rows` cells
@@ -33,15 +33,20 @@ const GridBoard = ({
 
 	const colWidth  = 100 / cols;
 	const rowHeight = 100 / rows;
+	const sectionHeight = `${(rows*50)}vh`;
+
+	console.log("Cell data", cells);
 
 	const gridCells =
 		children ?
 			children.map(withGridDimensions(colWidth, rowHeight)) :
-			cells.map(withGridDimensions(colWidth, rowHeight)).map(GridBoard.Cell);
+			cells.map((cell, i) => withGridDimensions(colWidth, rowHeight, i)(cell));
+
+	console.log("GridBoard children remapped<", gridCells);
 
 	const gbSection = h(
 		"section",
-		{ className: "grid-board", ...props },
+		{ className: "grid-board", style: { height: sectionHeight }, ...props },
 		gridCells
 	);
 
@@ -55,18 +60,20 @@ const GridBoard = ({
  * expressed as the number of cols and rows that they cover
  * @param {Number} col - column index (1-based)
  * @param {Number} row - row index (1-based)
- * @param {Number} [colSpan=1]
- * @param {Number} [rowSpan=1]
+ * @param {Number} [col_span=1]
+ * @param {Number} [row_span=1]
  */
 GridBoard.Cell = ({
 	col,
 	row,
-	colSpan = 1,
-	rowSpan = 1,
+	col_span = 1,
+	row_span = 1,
 	colWidth,
 	rowHeight,
+	text, image,
 	children,
 	className = '',
+	radial_gradient,
 	...props
 }) => {
 
@@ -76,12 +83,15 @@ GridBoard.Cell = ({
 		position: "absolute",
 		top: ((row-1) * rowHeight) + "%",
 		left: ((col-1) * colWidth) + "%",
-		width: (colWidth * colSpan) + "%",
-		height: (rowHeight * rowSpan) + "%",
+		width: (colWidth * col_span) + "%",
+		height: (rowHeight * row_span) + "%",
 	}
 
+	if (radial_gradient) cellStyle.background = `radial-gradient(${radial_gradient})`;
+
 	return (<div className={className} style={cellStyle} {...props}>
-		{ children }
+		{ image ? <img src={image} alt="" className="cell-image"></img> : null }
+		{ text ? <div className="cell-text bottom">{ text }</div> : null }
 	</div>)
 }
 
