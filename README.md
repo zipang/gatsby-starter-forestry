@@ -16,3 +16,15 @@ Pages and fieldsets are declared inside the `.forestry` directory.
 Deployments are automatically made on Netlify on each commit on MASTER branch.
 
 ### Now.sh
+
+()
+
+## Project structure
+
+### Overview of the concepts
+
+This gatsby starter project is a full Headless-CMS (forestry.io) + custom layout framework (React) solution for building landing pages or small business websites.
+
+Content is structured between pages ang global metadatas. 
+A page template defines the layout (header, footer and main body) for a page.
+A page content is structured into sections.
