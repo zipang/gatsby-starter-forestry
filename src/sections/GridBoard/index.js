@@ -27,26 +27,24 @@ const GridBoard = ({
 	cols = 5,
 	rows = 2,
 	children,
+	style = {},
 	cells = [],
 	...props
 }) => {
 
 	const colWidth  = 100 / cols;
 	const rowHeight = 100 / rows;
-	const sectionHeight = `${(rows*50)}vh`;
 
 	console.log("Cell data", cells);
-
-	const gridCells =
-		children ?
-			children.map(withGridDimensions(colWidth, rowHeight)) :
-			cells.map((cell, i) => withGridDimensions(colWidth, rowHeight, i)(cell));
-
+	const gridCells = (children ? children : cells)
+		.map((cell, i) => withGridDimensions(colWidth, rowHeight, i)(cell));
 	console.log("GridBoard children remapped<", gridCells);
+
+	style.height = `${(rows*50)}vh`;
 
 	const gbSection = h(
 		"section",
-		{ className: "grid-board", style: { height: sectionHeight }, ...props },
+		{ className: "grid-board", style, ...props },
 		gridCells
 	);
 
@@ -60,8 +58,8 @@ const GridBoard = ({
  * expressed as the number of cols and rows that they cover
  * @param {Number} col - column index (1-based)
  * @param {Number} row - row index (1-based)
- * @param {Number} [col_span=1]
- * @param {Number} [row_span=1]
+ * @param {Number} [col_span=1] - how many colums does this cell stretch over
+ * @param {Number} [row_span=1] - how many rows does this cell stretch over
  */
 GridBoard.Cell = ({
 	col,
@@ -87,7 +85,9 @@ GridBoard.Cell = ({
 		height: (rowHeight * row_span) + "%",
 	}
 
-	if (radial_gradient) cellStyle.background = `radial-gradient(${radial_gradient})`;
+	if (radial_gradient) {
+		cellStyle.background = `radial-gradient(${radial_gradient})`;
+	}
 
 	return (<div className={className} style={cellStyle} {...props}>
 		{ image ? <img src={image} alt="" className="cell-image"></img> : null }
