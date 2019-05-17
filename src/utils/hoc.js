@@ -14,7 +14,7 @@ const hoc = {
 	compose : (Wrapped, wrappers) => {
 
 		if (!Array.isArray(wrappers)) {
-			throw new Error(`You must pass an array of hoc functions as the second argument to compose !`);
+			throw new TypeError(`You must pass an array of hoc functions as the second argument to compose !`);
 		}
 		return wrappers.reduce((prev, cur) => cur(prev), Wrapped);
 	}
