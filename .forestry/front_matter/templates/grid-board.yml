@@ -6,38 +6,20 @@ fields:
   type: number
   label: Columns count
   description: Number of columns
-  default: '5'
+  default: 5
   required: true
   config:
-    min: '1'
-    max: 
-    step: '1'
+    min: 1
+    max:
+    step: 1
 - name: rows
   type: number
   label: Rows count
   description: Number of rows
-  default: '2'
+  default: 2
   required: true
   config:
-    min: '1'
-    max: 
-    step: '1'
-- name: has_container
-  type: boolean
-  label: Include container
-  default: false
-- name: container_class_name
-  type: text
-  config:
-    required: false
-  label: Container class name
-  default: container
-- name: cells
-  type: field_group_list
-  label: Cells
-  description: Add cells on the grid
-  fields:
-  - type: include
-    template: slide
-    label: Cell
-    name: cell
+    min: 1
+    max:
+    step: 1
+
