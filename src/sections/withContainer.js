@@ -1,7 +1,7 @@
 /**
- * Surround the children of a component (generally a section)
+ * Surround the child of a component (generally a section)
  * with a container (like in Bootstrap)
- * The use case is to apply a responsive width
+ * The use case is to create a central section with a responsive width
  * @param {Function|Object} Section
  */
 const withContainer = (Section) =>
