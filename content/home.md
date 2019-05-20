@@ -55,13 +55,6 @@ sections:
   cols: 3
   rows: 2
   cells:
-  - text: "### Seats"
-    image: "/img/bicycle-seat.png"
-    radial_gradient: "#e6dada, #274046"
-    col: 3
-    row: 1
-    col_span: 1
-    row_span: 2
   - col: 1
     row: 1
     col_span: 2
@@ -69,5 +62,26 @@ sections:
     radial_gradient: "at center -400px, #1c92d2, #f2fcfe"
     text: "### Gears"
     image: "/img/modele-summit-evo-01.png"
+  - col: 1
+    row: 2
+    col_span: 1
+    row_span: 1
+    radial_gradient: "at top right, #808080, #3fada8"
+    text: "### Gears"
+    image: "/img/bicycle-gears.png"
+  - col: 2
+    row: 2
+    col_span: 1
+    row_span: 1
+    radial_gradient: "at top right, #808080, #3fada8"
+    text: "### Tyres"
+    image: "/img/bicycle-rubber-tyres.png"
+  - text: "### Seats"
+    image: "/img/bicycle-seat.png"
+    radial_gradient: "#e6dada, #274046"
+    col: 3
+    row: 1
+    col_span: 1
+    row_span: 2
 
 ---
