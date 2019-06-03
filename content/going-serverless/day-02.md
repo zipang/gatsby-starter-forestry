@@ -1,5 +1,5 @@
 ---
-layout: article
+template: article
 title: "Going Serverless - Day #2"
 headline: "Adieu Wordpress : nous déployons des sites statiques !"
 icon: pencil-alt

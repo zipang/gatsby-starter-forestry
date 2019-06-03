@@ -1,5 +1,5 @@
 ---
-layout: page
+template: page
 title: EIDOLON LABS
 resume: Une série d'articles sur les technologies Serverless
 sections:

@@ -1,7 +1,7 @@
 {
-  "name": "tipafrance-reboot",
-  "version": "0.0.1",
-  "description": "Gatsby+React reboot of the TIPA main site",
+  "name": "gatsby-starter-forestry",
+  "version": "0.1.0",
+  "description": "Gatsby+React Starter Project with markdown content and Forestry",
   "main": "n/a",
   "author": "zipang <christophe.desguez@gmail.com>",
   "license": "MIT",
